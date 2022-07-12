@@ -1,9 +1,9 @@
 var trex, trex_running, trex_collided;
 var ground, invisibleGround, groundImage;
 
-var gameState =START
-var START
-var END
+var gameState=START
+var START =1
+var END =0
 
 
 
@@ -102,7 +102,7 @@ function draw() {
    gameOver.visible=true;
    restart.visible=true;
    cactus_group.setVelocityXEach(0);
-   nube_group.setVelocityXEach(0);
+   nube_group.setVelocityXEach(0); // velocity Y 
 }
   
   drawSprites();
@@ -142,13 +142,14 @@ function spawnCactus(){
      case 6: cactus.addImage(cactus6); 
     break;
      default: break;
-     cactus_group.add(cactus)
+     cactus_group.add(cactus) // este no va aqui 
   }
   cactus.scale=0.5
+   // ponlo aqui
  }
 
 }
 
 function reset (){
-
+ // faltan todas estas instrucciones 
 }
